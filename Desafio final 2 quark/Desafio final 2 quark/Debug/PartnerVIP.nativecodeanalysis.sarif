@@ -1,0 +1,157 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable \"Partner::id\" no está inicializada. Siempre debe inicializarse una variable miembro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/benja/source/repos/Desafio final Quark/Partner.h"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Partner@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Partner::id"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30145.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0039D1C0 -il C:\\Users\\benja\\AppData\\Local\\Temp\\_CL_3c974fefast -typedil -f C:\\Users\\benja\\source\\repos\\Desafio final Quark\\PartnerVIP.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930145 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\PartnerVIP.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory F:\\Projects\\Desafio final 2 quark\\Desafio final 2 quark -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I F:\\Projects\\Desafio final 2 quark\\Desafio final 2 quark\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -external:I F:\\Projects\\Desafio final 2 quark\\Desafio final 2 quark\\Include\\um -I F:\\Projects\\Desafio final 2 quark\\Desafio final 2 quark\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/view.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "bd04ad35c5315615ceb8fd1d4dc967c1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/view.h"
+          },
+          "hashes": {
+            "md5": "372a66d34aa92f070c54da72691b27c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/benja/source/repos/Desafio final Quark/Presenter.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "7544ca87ea2da762b676a562ebdcfedc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/presenter.h"
+          },
+          "hashes": {
+            "md5": "882ed2a08d01f44f83529ce317b04b35"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/partner.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "a06086f84d63ff15c1c0d1d1700f908b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/copybook.h"
+          },
+          "hashes": {
+            "md5": "a0c8104bc7f5938bc0ef04e250fb8d67"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/partnerregular.h"
+          },
+          "hashes": {
+            "md5": "8760b69feddcd42ba8244c9149378967"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/partnervip.h"
+          },
+          "hashes": {
+            "md5": "a3963c7868f8d744dadf7a2682587339"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/book.h"
+          },
+          "hashes": {
+            "md5": "4bdb21c8634d4eaa0e0edd85ffa1d86b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/loan.h"
+          },
+          "hashes": {
+            "md5": "5716409d8964ad2417ff76dd37645bdc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benja/source/repos/desafio final quark/partnervip.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "a3e77958400bc48bb16d3714422f39aa"
+          }
+        }
+      ]
+    }
+  ]
+}
